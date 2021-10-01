@@ -13,8 +13,8 @@ export const FootWrapper = styled.div`
     margin: 1rem 0;
   }
   @media (max-width: 480px) {
-    flex-flow: column;
-    div:first-child {
+    flex-flow: column-reverse;
+    div:last-child {
       margin: 0 0 1rem;
     }
   }
