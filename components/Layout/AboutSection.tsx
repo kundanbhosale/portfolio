@@ -39,6 +39,7 @@ const AboutSection = () => {
               icon
               href='https://www.linkedin.com/in/kundan-bhosale/'
               target='_blank'
+              rel='noreferrer'
             >
               <IoLogoLinkedin size='1.7em' />
             </Button>
@@ -46,6 +47,7 @@ const AboutSection = () => {
               icon
               href='https://www.instagram.com/kundanbhosale_/'
               target='_blank'
+              rel='noreferrer'
             >
               <IoLogoInstagram size='1.7em' />
             </Button>

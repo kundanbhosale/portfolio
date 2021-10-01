@@ -32,7 +32,12 @@ const HeroSection = () => {
           <h2>web developer</h2>
           <FlexWrapper className='my-2'>
             <Button href='#work'>See My Work</Button>
-            <Button icon href='https://github.com/Kundan435' target='_blank'>
+            <Button
+              icon
+              href='https://github.com/Kundan435'
+              target='_blank'
+              rel='noreferrer'
+            >
               <IoLogoGithub size='2em' />
             </Button>
           </FlexWrapper>

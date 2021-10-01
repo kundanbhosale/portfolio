@@ -52,7 +52,12 @@ const ContactSection = () => {
       </h3>
       <p style={{ marginBottom: 0 }}>
         Please fill the contact form or send me an email on&nbsp;
-        <a className='text-pink pinkhover'>kundanmbhosale@gmail.com</a>
+        <a
+          className='text-pink pinkhover'
+          href='mailto:kundanmbhosale@gmail.com'
+        >
+          kundanmbhosale@gmail.com
+        </a>
       </p>
       <FlexWrapper style={{ justifyContent: 'space-between' }}>
         <div style={{ width: `${desktop ? '50%' : '100%'}` }}>
