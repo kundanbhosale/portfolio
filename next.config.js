@@ -7,4 +7,6 @@ module.exports = withBundleAnalyzer({
     loader: 'akamai',
     path: '',
   },
+  basePath: '/portfolio',
+  assetPrefix: '/portfolio',
 })
