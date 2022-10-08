@@ -14,11 +14,11 @@ import { useViewport } from '../providers/viewport'
 export const getStaticProps = async () => {
   try {
     const { data } = await axios.get(
-      'https://api.github.com/users/Kundan435/repos?per_page=5',
+      'https://api.github.com/users/kundanbhosale/repos?per_page=5',
       {
         headers: {
-          Accept: 'application/vnd.github.mercy-preview+json'
-        }
+          Accept: 'application/vnd.github.mercy-preview+json',
+        },
       }
     )
 
@@ -36,15 +36,15 @@ export const getStaticProps = async () => {
 
     return {
       props: {
-        data: newData
+        data: newData,
       },
-      revalidate: 60 * 60
+      revalidate: 60 * 60,
     }
   } catch (error) {
     return {
       props: {
-        data: []
-      }
+        data: [],
+      },
     }
   }
 }
@@ -57,27 +57,27 @@ const Home: React.FC<IProps> = ({ data }) => {
       <Head>
         <title>Kundan Bhosale</title>
         <meta
-          name='description'
-          content='Hey I am Kundan Bhosale a Full Stack Web Developer. I can build complex and mordern websites and web apps.'
+          name="description"
+          content="Hey I am Kundan Bhosale a Full Stack Web Developer. I can build complex and mordern websites and web apps."
         />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <div>
-          <section className='vh-100'>
+          <section className="vh-100">
             <Navbar />
             <HeroSection />
           </section>
         </div>
-        <section id='about' className='py-3'>
+        <section id="about" className="py-3">
           <SkillSection />
         </section>
-        <section className='py-3'>
+        <section className="py-3">
           <AboutSection />
         </section>
         <WorkSection data={data} />
-        <section id='contact' className='py-3'>
+        <section id="contact" className="py-3">
           <ContactSection />
           {desktop && <Footer />}
         </section>
